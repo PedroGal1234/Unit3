@@ -40,7 +40,7 @@ print(total)
 
 total = 0
 i = 1
-while 1<=5:
+while i<=5:
     total += i #SAME THING AS: total = total+i
     i+= 1  #SAME THING AS: i = i+1
 print(total)
