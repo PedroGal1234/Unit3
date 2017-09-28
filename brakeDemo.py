@@ -4,6 +4,9 @@
 
 
 #copy cat 
-while TrueL:
-    input('Say Something: ')
+while True:
+    text = input('Type Something: ')
+    print(text)
+    if text == 'something':
+        break
 
