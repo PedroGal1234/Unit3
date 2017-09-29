@@ -10,6 +10,7 @@ month = date.today().month
 date = date.today().day 
 repeats = 0
 i = 0
+
 while True:
     if weekday(year,month+i,13) == 4:
         print(month,'/',13,'/',year)
