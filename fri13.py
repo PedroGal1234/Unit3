@@ -8,6 +8,16 @@ from calendar import weekday
 year = date.today().year
 month = date.today().month 
 date = date.today().day 
-
+repeats = 0
+i = 0
 while True:
-    if weekday(year,month,13)
+    if weekday(year,month+i,13) == 4:
+        print(month,'/',13,'/',year)
+    if month == 12:
+        month = 0
+        repeats = repeats + 1
+        year = year +1
+    month = month + 1
+    if repeats == 10:
+        break
+    
