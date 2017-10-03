@@ -38,7 +38,16 @@ for longLines in range (1,8):
 blueRectangle = RectangleAsset(300,175,blueOutline,blue)
 Sprite(blueRectangle,(100,25))
 
-PolygonAsset([(0,0),(120,180),(60,300)],blackOutline,red)
+Horizontal = 0
+for i in range(1,51):
+    if i<=6:
+        star = PolygonAsset([(0,5.5),(5,5),(6.5,0),(9,5),(14,5.5),(10.5,9),(12,14),(6.5,11.5),(2,14),(3.5,9)],whiteOutline,white)
+        Sprite(star,(110+Horizontal,40))
+        Horizontal = Horizontal + 49
+
+
+
+
 
 App().run()
     
