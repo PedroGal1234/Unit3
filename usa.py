@@ -23,6 +23,7 @@ for shortLines in range(1,9):
     shortRectangle = RectangleAsset(350,25,outline,color)
     down = down+25
     Sprite(shortRectangle,(400,down))
+
 down = 200
 for longLines in range (1,8):
     if longLines%2 == 0:
@@ -38,16 +39,44 @@ for longLines in range (1,8):
 blueRectangle = RectangleAsset(300,175,blueOutline,blue)
 Sprite(blueRectangle,(100,25))
 
-Horizontal = 0
+horizontalRow1 = 0
+horizontalRow2 = 0
+horizontalRow3 = 0
+horizontalRow4 = 0
+horizontalRow5 = 0
+horizontalRow6 = 0
+horizontalRow7 = 0
+horizontalRow8 = 0
+horizontalRow9 = 0
 for i in range(1,51):
-    if i<=6:
-        star = PolygonAsset([(0,5.5),(5,5),(6.5,0),(9,5),(14,5.5),(10.5,9),(12,14),(6.5,11.5),(2,14),(3.5,9)],whiteOutline,white)
-        Sprite(star,(110+Horizontal,40))
-        Horizontal = Horizontal + 49
-
-
-
-
+    star = PolygonAsset([(0,5.5),(5,5),(6.5,0),(9,5),(14,5.5),(10.5,9),(12,14),(6.5,11.5),(2,14),(3.5,9)],whiteOutline,white)
+    if i <= 6:
+        Sprite(star,(120+horizontalRow1,28))
+        horizontalRow1 = horizontalRow1 + 49
+    elif i <= 11:
+        Sprite(star,(150+horizontalRow2,46))
+        horizontalRow2 = horizontalRow2 + 49
+    elif i <= 17:
+        Sprite(star,(120+horizontalRow3,64))
+        horizontalRow3 = horizontalRow3 + 49
+    elif i <= 22:
+        Sprite(star,(150+horizontalRow4,82))
+        horizontalRow4 = horizontalRow4 + 49
+    elif i <= 28:
+        Sprite(star,(120+horizontalRow5,100))
+        horizontalRow5 = horizontalRow5 + 49
+    elif i <= 33:
+        Sprite(star,(150+horizontalRow6,118))
+        horizontalRow6 = horizontalRow6 + 49
+    elif i <= 39:
+        Sprite(star,(120+horizontalRow7,136))
+        horizontalRow7 = horizontalRow7 + 49
+    elif i <= 44:
+        Sprite(star,(150+horizontalRow8,154))
+        horizontalRow8 = horizontalRow8 + 49
+    elif i <= 60:
+        Sprite(star,(120+horizontalRow9,172))
+        horizontalRow9 = horizontalRow9 + 49
 
 App().run()
     
