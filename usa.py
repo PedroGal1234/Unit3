@@ -51,32 +51,32 @@ horizontalRow9 = 0
 for i in range(1,51):
     star = PolygonAsset([(0,5.5),(5,5),(6.5,0),(9,5),(14,5.5),(10.5,9),(12,14),(6.5,11.5),(2,14),(3.5,9)],whiteOutline,white)
     if i <= 6:
-        Sprite(star,(120+horizontalRow1,28))
-        horizontalRow1 = horizontalRow1 + 45
+        Sprite(star,(110+horizontalRow1,28))
+        horizontalRow1 = horizontalRow1 + 53
     elif i <= 11:
-        Sprite(star,(145+horizontalRow2,46))
-        horizontalRow2 = horizontalRow2 + 45
+        Sprite(star,(135+horizontalRow2,46))
+        horizontalRow2 = horizontalRow2 + 53
     elif i <= 17:
-        Sprite(star,(120+horizontalRow3,64))
-        horizontalRow3 = horizontalRow3 + 45
+        Sprite(star,(110+horizontalRow3,64))
+        horizontalRow3 = horizontalRow3 + 53
     elif i <= 22:
-        Sprite(star,(145+horizontalRow4,82))
-        horizontalRow4 = horizontalRow4 + 45
+        Sprite(star,(135+horizontalRow4,82))
+        horizontalRow4 = horizontalRow4 + 53
     elif i <= 28:
-        Sprite(star,(120+horizontalRow5,100))
-        horizontalRow5 = horizontalRow5 + 45
+        Sprite(star,(110+horizontalRow5,100))
+        horizontalRow5 = horizontalRow5 + 53
     elif i <= 33:
-        Sprite(star,(145+horizontalRow6,118))
-        horizontalRow6 = horizontalRow6 + 45
+        Sprite(star,(135+horizontalRow6,118))
+        horizontalRow6 = horizontalRow6 + 53
     elif i <= 39:
-        Sprite(star,(120+horizontalRow7,136))
-        horizontalRow7 = horizontalRow7 + 45
+        Sprite(star,(110+horizontalRow7,136))
+        horizontalRow7 = horizontalRow7 + 53
     elif i <= 44:
-        Sprite(star,(145+horizontalRow8,154))
-        horizontalRow8 = horizontalRow8 + 45
+        Sprite(star,(135+horizontalRow8,154))
+        horizontalRow8 = horizontalRow8 + 53
     elif i <= 60:
-        Sprite(star,(120+horizontalRow9,172))
-        horizontalRow9 = horizontalRow9 + 45
+        Sprite(star,(110+horizontalRow9,172))
+        horizontalRow9 = horizontalRow9 + 53
 
 App().run()
     
