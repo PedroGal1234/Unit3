@@ -2,6 +2,7 @@
 #10/2/17
 #forBanter.py - Fooling Around
 
+from ggame import *
 
 red = Color(0xff0000,1)
 green = Color(0x00ff00,1)
@@ -24,6 +25,7 @@ while True:
     if move == 'w': 
         vertical = +100
         Sprite(redRectangle,(vertical,horizontal))
+    if move == 'lol':
     if move == 'lol':
         break
 
