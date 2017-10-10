@@ -12,18 +12,19 @@ redOutline = LineStyle(1,red)
 whiteOutline = LineStyle(1,white)
 blueOutline = LineStyle(.001,blue)
 
-
 down = 0
-for shortLines in range(1,9):
-    if shortLines%2 == 0:
-        outline = whiteOutline = LineStyle(1,white)
-        color = white
-    else:
-        outline = redOutline = LineStyle(1,red)
-        color = red
-    shortRectangle = RectangleAsset(35,2.5,outline,color)
-    down = down+2.5
-    Sprite(shortRectangle,(40,down))
+for j in range(20):
+    for k in range (25):
+        for shortLines in range(1,9):
+            if shortLines%2 == 0:
+                outline = whiteOutline = LineStyle(1,white)
+                color = white
+            else:
+                outline = redOutline = LineStyle(1,red)
+                color = red
+            shortRectangle = RectangleAsset(35,2.5,outline,color)
+            down = down+2.5
+            Sprite(shortRectangle,(40+50*k,down+j*30))
 
 for j in range(20): 
     for k in range(25):
