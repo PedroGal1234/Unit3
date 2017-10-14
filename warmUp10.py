@@ -12,9 +12,12 @@ redOutline = LineStyle(1,red)
 whiteOutline = LineStyle(1,white)
 blueOutline = LineStyle(.001,blue)
 
-down = 0
-for j in range(20):
-    for k in range (25):
+hs = 162.25
+vs =81.25 
+
+for k in range(25):
+    for j in range(25):
+        down = 0
         for shortLines in range(1,9):
             if shortLines%2 == 0:
                 outline = whiteOutline = LineStyle(1,white)
@@ -22,12 +25,13 @@ for j in range(20):
             else:
                 outline = redOutline = LineStyle(1,red)
                 color = red
-            shortRectangle = RectangleAsset(35,2.5,outline,color)
-            down = down+2.5
-            Sprite(shortRectangle,(40+50*k,down+j*30))
-down = 20
-for j in range(20): 
-    for k in range(25):
+            shortRectangle = RectangleAsset(87.5,6.25,outline,color)
+            down = down+6.25
+            Sprite(shortRectangle,(100+j*hs,down+k*vs))
+
+down = 50
+for k in range(25):
+    for j in range(25):
         for longLines in range (1,8):
             if longLines%2 == 0:
                 outline = whiteOutline = LineStyle(1,white)
@@ -35,26 +39,24 @@ for j in range(20):
             else:
                 outline = redOutline = LineStyle(1,red)
                 color = red
-                shortRectangle = RectangleAsset(65,2.5,outline,color)
-                down = down+2.5
-            Sprite(shortRectangle,(10,down))
+            shortRectangle = RectangleAsset(162.5,6.25,outline,color)
+            down = down+6.25
+            Sprite(shortRectangle,(25+j*hs,down+k*vs))
 
-for j in range(20): 
-    for k in range(25):
-        blueRectangle = RectangleAsset(30+50*k,17.5+j*30,blueOutline,blue)
-        Sprite(blueRectangle,(10,2.5))
+for k in range(25):
+    for j in range(25):
+        blueRectangle = RectangleAsset(75,43.75,blueOutline,blue)
+        Sprite(blueRectangle,(25+j*hs,6.25+k*vs))
 
-star = PolygonAsset([(0,5.5),(5,5),(6.5,0),(9,5),(14,5.5),(10.5,9),(12,14),(6.5,11.5),(2,14),(3.5,9)],whiteOutline,white)
-for m in range(20):
-    for n in range(25):
+star = PolygonAsset([(0,1.375),(1.25,1.25),(1.625,0),(2.25,1.25),(3.5,1.375),(2.625,2.25),(3,3.5),(1.625,2.875),(.5,3.5),(.875,2.25)],whiteOutline,white)
+for k in range(25):
+    for j in range(25):
         for j in range(0,5):
             for i in range(0,6):
-                Sprite(star,(110+53*i+n*50,28+36*j+m*30))
+                Sprite(star,(27.5+13.25*i+j*hs,7+9*j+k*vs))
         for j in range(0,4):
             for i in range(0,5):
-                Sprite(star,(135+53*i+n*50,46+36*j+m*30))
+                Sprite(star,(33.75+13.25*i+j*hs,11.5+9*j+k*vs))
 
 App().run()
     
-
-
